@@ -1,0 +1,29 @@
+{
+  "name": "feed-events",
+  "version": "0.1.0",
+  "description": "Event-based Wrapper for Feeds",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianWebb/feedevents.git"
+  },
+  "keywords": [
+    "Event",
+    "Feed"
+  ],
+  "author": "Julian Webb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JulianWebb/feedevents/issues"
+  },
+  "homepage": "https://github.com/JulianWebb/feedevents#readme",
+  "dependencies": {
+    "@types/cron-converter": "^1.0.1",
+    "cron-converter": "^1.0.1",
+    "rss-parser": "^3.12.0"
+  }
+}
