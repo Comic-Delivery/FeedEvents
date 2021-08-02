@@ -56,13 +56,13 @@ class FeedHandler extends EventEmitter {
  * @param {Object} latest 
  * @returns {Promise<FeedHandler>}
  */
-async function FeedEvents(URL, configuration, latest) {
+async function FeedEvents(URL, schedule, configuration, latest) {
   let parser = new RSSParser(configuration);
   
   // Test URL
   await (new RSSParser({ timeout: 1000 })).parseURL(URL);
 
-  let scheduler = (new Cron()).fromString(configuration.schedule);
+  let scheduler = (new Cron()).fromString(schedule);
   return new FeedHandler(parser, URL, scheduler, latest);
 }
 
